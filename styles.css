@@ -1,0 +1,187 @@
+:root {
+  --red: #b22222;          
+  --dark-red: #8b0000;     
+  --yellow: #ffd700;       
+  --orange: #ff8c00;           
+  --cream: #fffacd;             
+  --violet: #9932cc;       
+}
+
+body{
+  margin:0;
+  box-sizing:border-box;
+  padding:0;
+  overflow:hidden;
+  
+}
+main{
+  width:100%;
+  height:100vh;
+  background:radial-gradient(#FFF5C3,#9452A5) no-repeat;
+  display:flex;
+  justify-content: center; 
+  align-items: center;     
+  
+  
+}
+
+.main-circle {
+    margin-top:10px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border:1px groove;
+    background: conic-gradient(var(--yellow) 0.00% 6.25%,
+            var(--dark-red) 6.25% 8.33%,
+            var(--violet) 8.33% 10.42%,
+            var(--red) 10.42% 12.50%,
+            var(--yellow) 12.50% 18.75%,
+            var(--dark-red) 18.75% 20.83%,
+            var(--violet) 20.83% 22.92%,
+            var(--red) 22.92% 25.00%,
+            var(--yellow) 25.00% 31.25%,
+            var(--dark-red) 31.25% 33.33%,
+            var(--violet) 33.33% 35.42%,
+            var(--red) 35.42% 37.50%,
+            var(--yellow) 37.50% 43.75%,
+            var(--dark-red) 43.75% 45.83%,
+            var(--violet) 45.83% 47.92%,
+            var(--red) 47.92% 50.00%,
+            var(--yellow) 50.00% 56.25%,
+            var(--dark-red) 56.25% 58.33%,
+            var(--violet) 58.33% 60.42%,
+            var(--red) 60.42% 62.50%,
+            var(--yellow) 62.50% 68.75%,
+            var(--dark-red) 68.75% 70.83%,
+            var(--violet) 70.83% 72.92%,
+            var(--red) 72.92% 75.00%,
+            var(--yellow) 75.00% 81.25%,
+            var(--dark-red) 81.25% 83.33%,
+            var(--violet) 83.33% 85.42%,
+            var(--red) 85.42% 87.50%,
+            var(--yellow) 87.50% 93.75%,
+            var(--dark-red) 93.75% 95.83%,
+            var(--violet) 95.83% 97.92%,
+            var(--red) 97.92% 100.00%);
+}
+.second-circle {
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+    background: var(--orange);
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(52.5deg);
+    background: conic-gradient(var(--dark-red) 0% 1.5%,
+            var(--orange) 1.5% 12.5%,
+            var(--dark-red) 12.5% 14%,
+            var(--orange) 14% 25%,
+            var(--dark-red) 25% 26.5%,
+            var(--orange) 26.5% 37.5%,
+            var(--dark-red) 37.5% 39%,
+            var(--orange) 39% 50%,
+            var(--dark-red) 50% 51.5%,
+            var(--orange) 51.5% 62.5%,
+            var(--dark-red) 62.5% 64%,
+            var(--orange) 64% 75%,
+            var(--dark-red) 75% 76.5%,
+            var(--orange) 76.5% 87.5%,
+            var(--dark-red) 87.5% 89%,
+            var(--orange) 89% 100%);
+}  
+.third-circle{
+  width:250px;
+  height:250px;
+  border-radius:50%;
+  border:1px groove;
+  position:relative;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  background:var(--cream);
+}
+.fourth-circle{
+  width:220px;
+  height:220px;
+  border-radius:50%;
+  border:1px groove;
+  background:radial-gradient(circle,var(--cream),var(--yellow));
+  position:relative;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%)
+}
+.outer-box{
+  width: 140px;
+  height: 140px;
+  position:relative;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  border:1px groove;
+  background: conic-gradient(
+  var(--violet) 0% 25%,
+  var(--orange) 25% 50%,
+  var(--violet) 50% 75%,
+  var(--orange) 75% 100%
+  
+  );
+}
+.inner-box{
+  width: 120px;
+  height: 120px;
+  position:relative;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%) rotate(45deg);
+  border:10px solid;
+  border-image:conic-gradient(
+    from 0deg,
+    var(--orange) 0deg 90deg,
+    var(--violet) 90deg 180deg,
+    var(--orange) 180deg 270deg,
+    var(--violet) 270deg 360deg
+  ) 1;
+  background: conic-gradient(
+    var(--dark-red) 0% 12.5%,
+    var(--cream) 12.5% 25%,
+    var(--dark-red) 25% 37.5%,
+    var(--cream) 37.5% 50%,
+    var(--dark-red) 50% 62.5%,
+    var(--cream) 62.5% 75%,
+    var(--dark-red) 75% 87.5%,
+    var(--cream) 87.5% 100%
+  );
+}
+.text{
+  font-weight:600;
+  font-family: "Pacifico", cursive;
+  font-size:3rem;
+  background: linear-gradient(90deg, 
+#F05F57,
+#360940);
+  background-clip: text; 
+  color: transparent;
+  display:flex;
+  justify-content: center; 
+  align-items: center;
+  padding:5px;
+  margin-bottom:20x;
+  background-size: 600% 600%; 
+  animation: gradient-move 5s ease infinite;
+  
+}
+
+@keyframes gradient-move {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+
+  
